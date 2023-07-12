@@ -22,8 +22,8 @@ contract CounterTest is Test {
     function testFailDec() public {
         counter.increment();
         // counter.dec();
-        console.log("HERE",counter.number());
-        assertEq(counter.number(),2);
+        console.log("HERE", counter.number());
+        assertEq(counter.number(), 2);
     }
 
     function testDecUnderflow() public {

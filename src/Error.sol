@@ -5,11 +5,11 @@ contract Error {
     // custom Error
     error NotAuthorized();
 
-    function throwError() external {
-        require(false,"Not Authorized");
+    function throwError() external pure {
+        require(false, "Not Authorized");
     }
 
-    function throwCustomError() external {
+    function throwCustomError() external pure {
         revert NotAuthorized();
     }
 }
